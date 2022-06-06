@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: clamp(360px, 90%, 1000px);
+    background-color: rgba(245, 222, 179, 0.4);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.selected_photo_container {
+    position: relative;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+}    
+
+#selected_photo {
+    width: 100%;
+}
+
+.galery {
+    padding: 1rem;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galery .my-photo {
+    margin: .5rem;
+    border-radius: 5px;
+    display: block  ;
+}
+
+.galery .my-photo:hover {
+    border: 1px solid #999;
+    transform: scale(120%);
+    transition: transform 600ms ease-in-out;
+    margin: 0 2rem;
+}
+
+/* carousel */
+.btn {
+    display: block;
+    padding: .6rem;
+    border-radius: 5rem;
+    border: 0;
+    font-size: 1.4rem;
+    color: wheat
+}
+
+
+
+
+#prev_photo, 
+#next_photo {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-50%);
+
+}
+
+#prev_photo {
+    left: 2%;
+}
+
+#next_photo {
+    right: 2%;
+}
+
+
+
